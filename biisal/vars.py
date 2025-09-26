@@ -22,15 +22,15 @@ class Var(object):
     name = str(getenv('name', 'BotMaster_Movie_bot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001860172104'))
-    NEW_USER_LOG = int(getenv('NEW_USER_LOG', '-1001860172104'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002277284028'))
+    NEW_USER_LOG = int(getenv('NEW_USER_LOG', '-1002277284028'))
     PORT = int(getenv('PORT', '8080'))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     OWNER_ID = [int(x) for x in os.environ.get("OWNER_ID", "1249672673").split()]
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'premiumuseronly_Bot'))
+    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'botmaster55'))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME')) #dont need to fill anything here
@@ -40,9 +40,9 @@ class Var(object):
     FQDN = str(getenv('FQDN', 'BIND_ADRESS:PORT')) if not ON_HEROKU or getenv('FQDN', '') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',True))
     if HAS_SSL:
-        URL = "https://liquid-guglielma-bhaiforik76-551d8f99.koyeb.app/".format(FQDN)
+        URL = "".format(FQDN)
     else:
-        URL = "http://liquid-guglielma-bhaiforik76-551d8f99.koyeb.app/".format(FQDN)
+        URL = "".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://mongodb011:rxXV4pGzxLJgxaXQ@cluster0.undjh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'Premium_Jaction')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001860172104")).split()))   
@@ -52,5 +52,6 @@ class Var(object):
     SHORTLINK_URL = getenv('SHORTLINK_URL', '')
 
     SHORTLINK_API = getenv('SHORTLINK_API', '')
+
 
 
