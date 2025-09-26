@@ -15,10 +15,10 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', ''))
-    API_HASH = str(getenv('API_HASH', ''))
-    BOT_TOKEN = str(getenv('BOT_TOKEN' , ''))
-    PICS = (environ.get('PICS', 'https://envs.sh/jUp.jpg')).split()
+    API_ID = int(getenv('API_ID', '23621595'))
+    API_HASH = str(getenv('API_HASH', 'de904be2b4cd4efe2ea728ded17ca77d'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN' , '7396052741:AAG8MCIoWqXLEb2Pqs_yUD3xkQ6theosl5w'))
+    PICS = (environ.get('PICS', 'https://image.zaw-myo.workers.dev/image/b33ff584-1aea-4655-a9a7-b82a3b9b1235')).split()
     name = str(getenv('name', 'linkstreamrobot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
@@ -43,11 +43,12 @@ class Var(object):
         URL = "https://{}/".format(FQDN)
     else:
         URL = "http://{}/".format(FQDN)
-    DATABASE_URL = str(getenv('DATABASE_URL', ''))
+    DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://mongodb011:rxXV4pGzxLJgxaXQ@cluster0.undjh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'TechifyBots')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split()))   
     BAN_CHNL = list(set(int(x) for x in str(getenv("BAN_CHNL", "")).split()))   
     BAN_ALERT = str(getenv('BAN_ALERT' , '<b>ʏᴏᴜʀ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ.ᴄᴏɴᴛᴀᴄᴛ @CallOwnerBot ᴛᴏ ʀᴇsᴏʟᴠᴇ ᴛʜᴇ ɪssᴜᴇ!!</b>'))
     SHORTLINK = is_enabled('SHORTLINK', False)
     SHORTLINK_URL = getenv('SHORTLINK_URL', '')
+
     SHORTLINK_API = getenv('SHORTLINK_API', '')
