@@ -40,9 +40,9 @@ class Var(object):
     FQDN = str(getenv('FQDN', 'BIND_ADRESS:PORT')) if not ON_HEROKU or getenv('FQDN', '') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',True))
     if HAS_SSL:
-        URL = "".format(FQDN)
+        URL = "https://{}/".format(FQDN)
     else:
-        URL = "".format(FQDN)
+        URL = "https://{}/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://mongodb011:rxXV4pGzxLJgxaXQ@cluster0.undjh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'Premium_Jaction')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001860172104")).split()))   
@@ -52,6 +52,7 @@ class Var(object):
     SHORTLINK_URL = getenv('SHORTLINK_URL', '')
 
     SHORTLINK_API = getenv('SHORTLINK_API', '')
+
 
 
 
