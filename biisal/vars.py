@@ -19,18 +19,18 @@ class Var(object):
     API_HASH = str(getenv('API_HASH', 'de904be2b4cd4efe2ea728ded17ca77d'))
     BOT_TOKEN = str(getenv('BOT_TOKEN' , '7396052741:AAG8MCIoWqXLEb2Pqs_yUD3xkQ6theosl5w'))
     PICS = (environ.get('PICS', 'https://image.zaw-myo.workers.dev/image/b33ff584-1aea-4655-a9a7-b82a3b9b1235')).split()
-    name = str(getenv('name', 'linkstreamrobot'))
+    name = str(getenv('name', 'BotMaster_Movie_bot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', ''))
-    NEW_USER_LOG = int(getenv('NEW_USER_LOG', ''))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001860172104'))
+    NEW_USER_LOG = int(getenv('NEW_USER_LOG', '-1001860172104'))
     PORT = int(getenv('PORT', '8080'))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-    OWNER_ID = [int(x) for x in os.environ.get("OWNER_ID", "").split()]
+    OWNER_ID = [int(x) for x in os.environ.get("OWNER_ID", "1249672673").split()]
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'TechifyRahul'))
+    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'premiumuseronly_Bot'))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME')) #dont need to fill anything here
@@ -44,11 +44,12 @@ class Var(object):
     else:
         URL = "http://{}/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://mongodb011:rxXV4pGzxLJgxaXQ@cluster0.undjh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'TechifyBots')) 
-    BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split()))   
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'Premium_Jaction')) 
+    BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001860172104")).split()))   
     BAN_CHNL = list(set(int(x) for x in str(getenv("BAN_CHNL", "")).split()))   
     BAN_ALERT = str(getenv('BAN_ALERT' , '<b>ʏᴏᴜʀ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ.ᴄᴏɴᴛᴀᴄᴛ @CallOwnerBot ᴛᴏ ʀᴇsᴏʟᴠᴇ ᴛʜᴇ ɪssᴜᴇ!!</b>'))
     SHORTLINK = is_enabled('SHORTLINK', False)
     SHORTLINK_URL = getenv('SHORTLINK_URL', '')
 
     SHORTLINK_API = getenv('SHORTLINK_API', '')
+
