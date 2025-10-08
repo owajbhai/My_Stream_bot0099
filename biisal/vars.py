@@ -17,13 +17,13 @@ class Var(object):
     MULTI_CLIENT = False
     API_ID = int(getenv('API_ID', '23621595'))
     API_HASH = str(getenv('API_HASH', 'de904be2b4cd4efe2ea728ded17ca77d'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN' , '7396052741:AAG8MCIoWqXLEb2Pqs_yUD3xkQ6theosl5w'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN' , '8188646598:AAHMym5K1NVg3I1F4_hQpCrwhNOuO2_4aII'))
     PICS = (environ.get('PICS', 'https://image.zaw-myo.workers.dev/image/b33ff584-1aea-4655-a9a7-b82a3b9b1235')).split()
     name = str(getenv('name', 'BotMaster_Movie_bot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002277284028'))
-    NEW_USER_LOG = int(getenv('NEW_USER_LOG', '-1002277284028'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002727504644'))
+    NEW_USER_LOG = int(getenv('NEW_USER_LOG', '-1001860172104'))
     PORT = int(getenv('PORT', '8080'))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
@@ -52,6 +52,7 @@ class Var(object):
     SHORTLINK_URL = getenv('SHORTLINK_URL', '')
 
     SHORTLINK_API = getenv('SHORTLINK_API', '')
+
 
 
 
