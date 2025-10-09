@@ -24,7 +24,7 @@ TechifyBots = """{},
 
 <b>𝘕𝘰𝘵𝘦 :</b>𝘎𝘦𝘯𝘦𝘳𝘢𝘵𝘪𝘯𝘨 𝘓𝘪𝘯𝘬 𝘖𝘧 𝘈𝘥𝘶𝘭𝘵 𝘊𝘰𝘯𝘵𝘦𝘯𝘵 𝘐𝘴 𝘚𝘵𝘳𝘪𝘤𝘵𝘭𝘺 𝘗𝘳𝘰𝘩𝘪𝘣𝘪𝘵𝘦𝘥. 𝘐𝘧 𝘠𝘰𝘶 𝘞𝘪𝘭𝘭 𝘋𝘰 𝘠𝘰𝘶 𝘞𝘪𝘭𝘭 𝘎𝘦𝘵 𝘗𝘦𝘳𝘮𝘢𝘯𝘦𝘯𝘵 𝘉𝘢𝘯.
 
-<blockquote><a href='https://telegram.me/BotMaster_Movie_bot?startchannel&admin=post_messages+edit_messages+delete_messages'>➜ 𝖠𝖽𝖽 𝖳𝗈 𝖢𝗁𝖺𝗇𝗇𝖾𝗅</a></blockquote>"""
+<blockquote><a href='https://telegram.me/movieLover1_Bot?startchannel&admin=post_messages+edit_messages+delete_messages'>➜ 𝖠𝖽𝖽 𝖳𝗈 𝖢𝗁𝖺𝗇𝗇𝖾𝗅</a></blockquote>"""
 
 @StreamBot.on_message(filters.command("start") & filters.private )
 async def start(b, m):
@@ -62,7 +62,7 @@ async def start(b, m):
         except Exception:
             await b.send_message(
                 chat_id=m.chat.id,
-                text="<b>ꜱᴏᴍᴇᴛʜɪɴɢ  ᴡᴇɴᴛ  ᴡʀᴏɴɢ  <a href='https://telegram.me/premiumuseronly_Bot'>ᴄʟɪᴄᴋ  ʜᴇʀᴇ  ꜰᴏʀ  ꜱᴜᴘᴘᴏʀᴛ</a></b>",
+                text="<b>ꜱᴏᴍᴇᴛʜɪɴɢ  ᴡᴇɴᴛ  ᴡʀᴏɴɢ  <a href='https://telegram.me/Botmaster55'>ᴄʟɪᴄᴋ  ʜᴇʀᴇ  ꜰᴏʀ  ꜱᴜᴘᴘᴏʀᴛ</a></b>",
                 
                 disable_web_page_preview=True)
             return
@@ -77,7 +77,7 @@ async def start(b, m):
                         InlineKeyboardButton("• ʜᴇʟᴘ •", callback_data="help")
                     ],
                     [
-                        InlineKeyboardButton("♻ ᴅᴇᴠᴇʟᴏᴘᴇʀ ♻", url="https://telegram.me/premiumuseronly_Bot")
+                        InlineKeyboardButton("♻ ᴅᴇᴠᴇʟᴏᴘᴇʀ ♻", url="https://telegram.me/Botmaster55")
                     ]
                 ]
             )
@@ -119,7 +119,7 @@ async def help_cd(b, m):
         except Exception:
             await b.send_message(
                 chat_id=m.chat.id,
-                text="ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ ᴄᴏɴᴛᴀᴄᴛ [ᴏᴡɴᴇʀ](https://telegram.me/premiumuseronly_Bot).",
+                text="ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ ᴄᴏɴᴛᴀᴄᴛ [ᴏᴡɴᴇʀ](https://telegram.me/Botmaster55).",
                 disable_web_page_preview=True)
             return
     await StreamBot.send_photo(
@@ -132,7 +132,7 @@ Just Send Me Files And I Will Give You Direct Download & Streaming Link.
 Also You Can Use Me In Your Channel..Just Add Me And Make Me Admin And See My Power 🔥</b>""",
     reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("👨‍💻  ʀᴇᴘᴏ", url="https://telegram.me/premiumuseronly_Bot"),
+            [InlineKeyboardButton("👨‍💻  ʀᴇᴘᴏ", url="https://telegram.me/Botmaster55"),
             InlineKeyboardButton("💥  ᴅᴏɴᴀᴛᴇ", callback_data="donate")],
             [InlineKeyboardButton("✗ ᴄʟᴏsᴇ ✗", callback_data="close")]
         ]
@@ -205,7 +205,7 @@ async def cb_handler(client, query):
                             InlineKeyboardButton("• ʜᴇʟᴘ •", callback_data="help")
                         ],
                         [
-                            InlineKeyboardButton("♻ ᴅᴇᴠᴇʟᴏᴘᴇʀ ♻", url="https://telegram.me/premiumuseronly_Bot")
+                            InlineKeyboardButton("♻ ᴅᴇᴠᴇʟᴏᴘᴇʀ ♻", url="https://telegram.me/Botmaster55")
                         ]
                     ]
                 )
@@ -213,7 +213,7 @@ async def cb_handler(client, query):
 
     elif data == "about":
         await query.message.edit_caption(
-            caption=f"<b>ᴍʏ ɴᴀᴍᴇ : <a href='https://telegram.me/premiumuseronly_Bot'>ʟɪɴᴋ sᴛʀᴇᴀᴍ ʀᴏʙᴏᴛ</a>\nʜᴏsᴛᴇᴅ ᴏɴ : ᴋᴏʏᴇʙ\nᴅᴀᴛᴀʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ\nʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 𝟹\nᴍʏ ᴄʀᴇᴀᴛᴏʀ : <a href='https://telegram.me/premiumuseronly_Bot'>MASTER</a></b>",
+            caption=f"<b>ᴍʏ ɴᴀᴍᴇ : <a href='https://telegram.me/Botmaster55'>ʟɪɴᴋ sᴛʀᴇᴀᴍ ʀᴏʙᴏᴛ</a>\nʜᴏsᴛᴇᴅ ᴏɴ : ᴋᴏʏᴇʙ\nᴅᴀᴛᴀʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ\nʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 𝟹\nᴍʏ ᴄʀᴇᴀᴛᴏʀ : <a href='https://telegram.me/Botmaster55'>MASTER</a></b>",
             reply_markup=InlineKeyboardMarkup(
                 [[ 
                      InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="start"),
@@ -237,7 +237,7 @@ async def cb_handler(client, query):
         caption=f"<b>You Don't Need Many Commands To Use This Bot 😅.\n\nJust Send Me Files And I Will Give You Direct Download & Streaming Link.\n\nAlso You Can Use Me In Your Channel..Just Add Me And Make Me Admin And See My Power 🔥</b>",
             reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("👨‍💻  ʀᴇᴘᴏ", url="https://telegram.me/premiumuseronly_Bot"),
+                [InlineKeyboardButton("👨‍💻  ʀᴇᴘᴏ", url="https://telegram.me/Botmaster55"),
                  InlineKeyboardButton("💥  ᴅᴏɴᴀᴛᴇ", callback_data="donate")],
                 [InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="start")]
             ]
@@ -250,7 +250,7 @@ async def cb_handler(client, query):
         if len(str(user_id)) == 10:
             reason = str(data.split("_")[2])
             try:
-                await client.send_message(user_id , f"<b>ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ʙʏ [MASTER](https://telegram.me/premiumuseronly_Bot)\nʀᴇᴀsᴏɴ : {reason}</b>")
+                await client.send_message(user_id , f"<b>ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ʙʏ [MASTER](https://telegram.me/Botmaster55)\nʀᴇᴀsᴏɴ : {reason}</b>")
                 await query.message.edit(f"<b>Aʟᴇʀᴛ sᴇɴᴛ ᴛᴏ <code>{user_id}</code>\nʀᴇᴀsᴏɴ : {reason}</b>")
             except Exception as e:
                 await query.message.edit(f"<b>sʀʏ ɪ ɢᴏᴛ ᴛʜɪs ᴇʀʀᴏʀ : {e}</b>")
@@ -267,7 +267,7 @@ async def cb_handler(client, query):
         user_id = int(user_id.replace(' ' , ''))
         if len(str(user_id)) == 10:
             try:
-                unban_text = "<b>ʜᴜʀʀᴀʏ..ʏᴏᴜ ᴀʀᴇ ᴜɴʙᴀɴɴᴇᴅ ʙʏ [MASTER](https://telegram.me/premiumuseronly_Bot)</b>"
+                unban_text = "<b>ʜᴜʀʀᴀʏ..ʏᴏᴜ ᴀʀᴇ ᴜɴʙᴀɴɴᴇᴅ ʙʏ [MASTER](https://telegram.me/Botmaster55)</b>"
                 await client.send_message(user_id , unban_text)
                 await query.message.edit(f"<b>Uɴʙᴀɴɴᴇᴅ Aʟᴇʀᴛ sᴇɴᴛ ᴛᴏ <code>{user_id}</code>\nᴀʟᴇʀᴛ ᴛᴇxᴛ : {unban_text}</b>")
             except Exception as e:
@@ -279,4 +279,5 @@ async def cb_handler(client, query):
         user_id = int(user_id.replace(' ' , ''))
 
         await query.message.edit(f"Tʜᴇ ᴜɴʙᴀɴ ᴏɴ <code>{user_id}</code> ᴡᴀs ᴇxᴇᴄᴜᴛᴇᴅ sɪʟᴇɴᴛʟʏ.")
+
 
