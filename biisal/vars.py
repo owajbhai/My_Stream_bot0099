@@ -17,12 +17,12 @@ class Var(object):
     MULTI_CLIENT = False
     API_ID = int(getenv('API_ID', '23621595'))
     API_HASH = str(getenv('API_HASH', 'de904be2b4cd4efe2ea728ded17ca77d'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN' , '8188646598:AAHMym5K1NVg3I1F4_hQpCrwhNOuO2_4aII'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN' , ''))
     PICS = (environ.get('PICS', 'https://image.zaw-myo.workers.dev/image/b33ff584-1aea-4655-a9a7-b82a3b9b1235')).split()
-    name = str(getenv('name', 'BotMaster_Movie_bot'))
+    name = str(getenv('name', 'movieLover1_Bot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002727504644'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002245217353'))
     NEW_USER_LOG = int(getenv('NEW_USER_LOG', '-1001860172104'))
     PORT = int(getenv('PORT', '8080'))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
@@ -37,21 +37,22 @@ class Var(object):
     
     else:
         ON_HEROKU = False
-    FQDN = str(getenv('FQDN', 'BIND_ADRESS:PORT')) if not ON_HEROKU or getenv('FQDN', 'https://liquid-guglielma-bhaiforik76-551d8f99.koyeb.app/') else APP_NAME+'.herokuapp.com'
+    FQDN = str(getenv('FQDN', 'https://resonant-rosie-bhaiforik76-6c00d401.koyeb.app/')) if not ON_HEROKU or getenv('FQDN', 'https://liquid-guglielma-bhaiforik76-551d8f99.koyeb.app/') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',True))
     if HAS_SSL:
-        URL = "https://liquid-guglielma-bhaiforik76-551d8f99.koyeb.app/".format(FQDN)
+        URL = "https://resonant-rosie-bhaiforik76-6c00d401.koyeb.app/".format(FQDN)
     else:
-        URL = "https://liquid-guglielma-bhaiforik76-551d8f99.koyeb.app/".format(FQDN)
+        URL = "https://resonant-rosie-bhaiforik76-6c00d401.koyeb.app/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://mongodb011:rxXV4pGzxLJgxaXQ@cluster0.undjh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'addb55_hub')) 
-    BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1002727504644")).split()))   
-    BAN_CHNL = list(set(int(x) for x in str(getenv("BAN_CHNL", "-1002727504644")).split()))   
-    BAN_ALERT = str(getenv('BAN_ALERT' , '<b>ʏᴏᴜʀ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ.ᴄᴏɴᴛᴀᴄᴛ @premiumuseronly_Bot ᴛᴏ ʀᴇsᴏʟᴠᴇ ᴛʜᴇ ɪssᴜᴇ!!</b>'))
-    SHORTLINK = is_enabled('SHORTLINK', False)
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'ClipMateBhai')) 
+    BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1002245217353")).split()))   
+    BAN_CHNL = list(set(int(x) for x in str(getenv("BAN_CHNL", "-1002245217353")).split()))   
+    BAN_ALERT = str(getenv('BAN_ALERT' , '<b>ʏᴏᴜʀ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ.ᴄᴏɴᴛᴀᴄᴛ @botmaster55 ᴛᴏ ʀᴇsᴏʟᴠᴇ ᴛʜᴇ ɪssᴜᴇ!!</b>'))
+    SHORTLINK = is_enabled('SHORTLINK', True)
     SHORTLINK_URL = getenv('SHORTLINK_URL', '')
 
     SHORTLINK_API = getenv('SHORTLINK_API', '')
+
 
 
 
