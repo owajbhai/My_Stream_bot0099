@@ -37,21 +37,22 @@ class Var(object):
     
     else:
         ON_HEROKU = False
-    FQDN = str(getenv('FQDN', 'https://resonant-rosie-bhaiforik76-6c00d401.koyeb.app/')) if not ON_HEROKU or getenv('FQDN', 'https://liquid-guglielma-bhaiforik76-551d8f99.koyeb.app/') else APP_NAME+'.herokuapp.com'
+    FQDN = str(getenv('FQDN', 'https://horrible-fania-bhaiforik76-baf3f629.koyeb.app/')) if not ON_HEROKU or getenv('FQDN', 'https://liquid-guglielma-bhaiforik76-551d8f99.koyeb.app/') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',True))
     if HAS_SSL:
-        URL = "https://resonant-rosie-bhaiforik76-6c00d401.koyeb.app/".format(FQDN)
+        URL = "https://horrible-fania-bhaiforik76-baf3f629.koyeb.app/".format(FQDN)
     else:
-        URL = "https://resonant-rosie-bhaiforik76-6c00d401.koyeb.app/".format(FQDN)
+        URL = "https://horrible-fania-bhaiforik76-baf3f629.koyeb.app/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://mongodb011:rxXV4pGzxLJgxaXQ@cluster0.undjh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'ClipMateBhai')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1002245217353")).split()))   
     BAN_CHNL = list(set(int(x) for x in str(getenv("BAN_CHNL", "-1002245217353")).split()))   
     BAN_ALERT = str(getenv('BAN_ALERT' , '<b>ʏᴏᴜʀ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ.ᴄᴏɴᴛᴀᴄᴛ @botmaster55 ᴛᴏ ʀᴇsᴏʟᴠᴇ ᴛʜᴇ ɪssᴜᴇ!!</b>'))
-    SHORTLINK = is_enabled('SHORTLINK', True)
+    SHORTLINK = is_enabled('SHORTLINK', False)
     SHORTLINK_URL = getenv('SHORTLINK_URL', 'arolinks.com')
 
     SHORTLINK_API = getenv('SHORTLINK_API', 'd6a2a1bae0a25c4aa2d4d3c3ad364d6306995a37')
+
 
 
 
