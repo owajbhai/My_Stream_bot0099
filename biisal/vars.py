@@ -40,9 +40,9 @@ class Var(object):
     FQDN = str(getenv('FQDN', 'https://horrible-fania-bhaiforik76-baf3f629.koyeb.app/')) if not ON_HEROKU or getenv('FQDN', 'https://liquid-guglielma-bhaiforik76-551d8f99.koyeb.app/') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',True))
     if HAS_SSL:
-        URL = "https://horrible-fania-bhaiforik76-baf3f629.koyeb.app/".format(FQDN)
+        URL = "https://olympic-lin-bhaiforik76-284c89aa.koyeb.app/".format(FQDN)
     else:
-        URL = "https://horrible-fania-bhaiforik76-baf3f629.koyeb.app/".format(FQDN)
+        URL = "https://olympic-lin-bhaiforik76-284c89aa.koyeb.app/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://mongodb011:rxXV4pGzxLJgxaXQ@cluster0.undjh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'SpyRadioHD')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1002245217353")).split()))   
@@ -52,6 +52,7 @@ class Var(object):
     SHORTLINK_URL = getenv('SHORTLINK_URL', 'arolinks.com')
 
     SHORTLINK_API = getenv('SHORTLINK_API', 'd6a2a1bae0a25c4aa2d4d3c3ad364d6306995a37')
+
 
 
 
