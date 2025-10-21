@@ -30,7 +30,7 @@ class Var(object):
     OWNER_ID = [int(x) for x in os.environ.get("OWNER_ID", "1249672673").split()]
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'botmaster55'))
+    OWNER_USERNAME = str(getenv('OWNER_USERNAME', '@botmaster55'))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME')) #dont need to fill anything here
@@ -52,6 +52,7 @@ class Var(object):
     SHORTLINK_URL = getenv('SHORTLINK_URL', 'arolinks.com')
 
     SHORTLINK_API = getenv('SHORTLINK_API', 'd6a2a1bae0a25c4aa2d4d3c3ad364d6306995a37')
+
 
 
 
