@@ -19,7 +19,7 @@ class Var(object):
     API_HASH = str(getenv('API_HASH', 'de904be2b4cd4efe2ea728ded17ca77d'))
     BOT_TOKEN = str(getenv('BOT_TOKEN' , ''))
     PICS = (environ.get('PICS', 'https://image.zaw-myo.workers.dev/image/ba994fdf-9c4a-4759-abb5-8a0ef9f19a5e')).split()
-    name = str(getenv('name', 'movieLover1_Bot'))
+    name = str(getenv('name', '@movieLover1_Bot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002245217353'))
@@ -52,6 +52,7 @@ class Var(object):
     SHORTLINK_URL = getenv('SHORTLINK_URL', 'arolinks.com')
 
     SHORTLINK_API = getenv('SHORTLINK_API', 'd6a2a1bae0a25c4aa2d4d3c3ad364d6306995a37')
+
 
 
 
